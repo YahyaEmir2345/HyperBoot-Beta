@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             cuiPanel1 = new HartUI.Controls.cuiPanel();
             label1 = new Label();
             cuiFormRounder1 = new HartUI.Components.cuiFormRounder();
@@ -35,6 +36,7 @@
             cuiButton2 = new HartUI.Controls.cuiButton();
             cuiButton1 = new HartUI.Controls.cuiButton();
             cuiPanel3 = new HartUI.Controls.cuiPanel();
+            cuiButton12 = new HartUI.Controls.cuiButton();
             label4 = new Label();
             cuiButton7 = new HartUI.Controls.cuiButton();
             cuiButton6 = new HartUI.Controls.cuiButton();
@@ -42,26 +44,25 @@
             cuiButton3 = new HartUI.Controls.cuiButton();
             flowLayoutPanel1 = new FlowLayoutPanel();
             cuiPanel4 = new HartUI.Controls.cuiPanel();
+            cuiPanel6 = new HartUI.Controls.cuiPanel();
+            label3 = new Label();
+            cuiButton11 = new HartUI.Controls.cuiButton();
+            cuiPanel15 = new HartUI.Controls.cuiPanel();
+            label12 = new Label();
+            comboBox3 = new ComboBox();
+            comboBox1 = new ComboBox();
+            cuiButton5 = new HartUI.Controls.cuiButton();
             cuiPanel9 = new HartUI.Controls.cuiPanel();
             label8 = new Label();
             cuiButton9 = new HartUI.Controls.cuiButton();
             cuiPanel8 = new HartUI.Controls.cuiPanel();
             label6 = new Label();
-            cuiComboBox3 = new HartUI.Controls.cuiComboBox();
             cuiPanel7 = new HartUI.Controls.cuiPanel();
             label5 = new Label();
             cuiButton8 = new HartUI.Controls.cuiButton();
-            cuiComboBox2 = new HartUI.Controls.cuiComboBox();
-            cuiComboBox1 = new HartUI.Controls.cuiComboBox();
             cuiPanel5 = new HartUI.Controls.cuiPanel();
             label2 = new Label();
-            cuiPanel6 = new HartUI.Controls.cuiPanel();
-            label3 = new Label();
             cuiPanel10 = new HartUI.Controls.cuiPanel();
-            cuiPanel23 = new HartUI.Controls.cuiPanel();
-            label20 = new Label();
-            cuiPanel22 = new HartUI.Controls.cuiPanel();
-            label19 = new Label();
             cuiPanel21 = new HartUI.Controls.cuiPanel();
             label18 = new Label();
             cuiPanel20 = new HartUI.Controls.cuiPanel();
@@ -72,9 +73,6 @@
             label15 = new Label();
             cuiPanel17 = new HartUI.Controls.cuiPanel();
             label14 = new Label();
-            cuiComboBox4 = new HartUI.Controls.cuiComboBox();
-            cuiPanel16 = new HartUI.Controls.cuiPanel();
-            label13 = new Label();
             cuiPanel14 = new HartUI.Controls.cuiPanel();
             label11 = new Label();
             cuiPanel13 = new HartUI.Controls.cuiPanel();
@@ -86,31 +84,45 @@
             label9 = new Label();
             cuiPanel24 = new HartUI.Controls.cuiPanel();
             cuiButton14 = new HartUI.Controls.cuiButton();
-            cuiButton13 = new HartUI.Controls.cuiButton();
-            cuiButton12 = new HartUI.Controls.cuiButton();
             pictureBox1 = new PictureBox();
             cuiPanel25 = new HartUI.Controls.cuiPanel();
             label21 = new Label();
             cuiPanel26 = new HartUI.Controls.cuiPanel();
             label22 = new Label();
+            openFileDialog1 = new OpenFileDialog();
+            cuiPanel16 = new HartUI.Controls.cuiPanel();
+            cuiButton13 = new HartUI.Controls.cuiButton();
+            label24 = new Label();
+            label23 = new Label();
+            cuiPanel27 = new HartUI.Controls.cuiPanel();
+            richTextBox1 = new RichTextBox();
+            cuiPanel23 = new HartUI.Controls.cuiPanel();
+            cuiTextBox3 = new HartUI.Controls.cuiTextBox();
+            label20 = new Label();
+            cuiPanel22 = new HartUI.Controls.cuiPanel();
+            cuiTextBox4 = new HartUI.Controls.cuiTextBox();
+            label19 = new Label();
+            label13 = new Label();
+            cuiPanel29 = new HartUI.Controls.cuiPanel();
+            cuiTextBox1 = new HartUI.Controls.cuiTextBox();
+            cuiPanel30 = new HartUI.Controls.cuiPanel();
+            cuiTextBox2 = new HartUI.Controls.cuiTextBox();
             cuiPanel1.SuspendLayout();
             cuiPanel2.SuspendLayout();
             cuiPanel3.SuspendLayout();
             cuiPanel4.SuspendLayout();
+            cuiPanel6.SuspendLayout();
+            cuiPanel15.SuspendLayout();
             cuiPanel9.SuspendLayout();
             cuiPanel8.SuspendLayout();
             cuiPanel7.SuspendLayout();
             cuiPanel5.SuspendLayout();
-            cuiPanel6.SuspendLayout();
             cuiPanel10.SuspendLayout();
-            cuiPanel23.SuspendLayout();
-            cuiPanel22.SuspendLayout();
             cuiPanel21.SuspendLayout();
             cuiPanel20.SuspendLayout();
             cuiPanel19.SuspendLayout();
             cuiPanel18.SuspendLayout();
             cuiPanel17.SuspendLayout();
-            cuiPanel16.SuspendLayout();
             cuiPanel14.SuspendLayout();
             cuiPanel13.SuspendLayout();
             cuiPanel11.SuspendLayout();
@@ -119,6 +131,12 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             cuiPanel25.SuspendLayout();
             cuiPanel26.SuspendLayout();
+            cuiPanel16.SuspendLayout();
+            cuiPanel27.SuspendLayout();
+            cuiPanel23.SuspendLayout();
+            cuiPanel22.SuspendLayout();
+            cuiPanel29.SuspendLayout();
+            cuiPanel30.SuspendLayout();
             SuspendLayout();
             // 
             // cuiPanel1
@@ -244,6 +262,7 @@
             // cuiPanel3
             // 
             cuiPanel3.BackColor = Color.Transparent;
+            cuiPanel3.Controls.Add(cuiButton12);
             cuiPanel3.Controls.Add(label4);
             cuiPanel3.Controls.Add(cuiButton7);
             cuiPanel3.Controls.Add(cuiButton6);
@@ -258,13 +277,50 @@
             cuiPanel3.Size = new Size(169, 367);
             cuiPanel3.TabIndex = 1;
             // 
+            // cuiButton12
+            // 
+            cuiButton12.CheckButton = false;
+            cuiButton12.Checked = false;
+            cuiButton12.CheckedBackground = Color.FromArgb(255, 106, 0);
+            cuiButton12.CheckedForeColor = Color.White;
+            cuiButton12.CheckedImageTint = Color.White;
+            cuiButton12.CheckedOutline = Color.FromArgb(255, 106, 0);
+            cuiButton12.Content = "Get  OS Advice";
+            cuiButton12.DialogResult = DialogResult.None;
+            cuiButton12.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            cuiButton12.ForeColor = Color.White;
+            cuiButton12.HoverBackground = SystemColors.ControlDark;
+            cuiButton12.HoverForeColor = Color.DimGray;
+            cuiButton12.HoverImageTint = Color.DimGray;
+            cuiButton12.HoverOutline = Color.FromArgb(32, 128, 128, 128);
+            cuiButton12.Image = null;
+            cuiButton12.ImageExpand = new Point(0, 0);
+            cuiButton12.Location = new Point(13, 34);
+            cuiButton12.Name = "cuiButton12";
+            cuiButton12.NormalBackground = Color.FromArgb(30, 30, 30);
+            cuiButton12.NormalForeColor = Color.White;
+            cuiButton12.NormalImageTint = Color.Black;
+            cuiButton12.NormalOutline = Color.FromArgb(64, 128, 128, 128);
+            cuiButton12.OutlineThickness = 1F;
+            cuiButton12.Padding = new Padding(12);
+            cuiButton12.PressedBackground = Color.WhiteSmoke;
+            cuiButton12.PressedForeColor = Color.FromArgb(32, 32, 32);
+            cuiButton12.PressedImageTint = Color.FromArgb(32, 32, 32);
+            cuiButton12.PressedOutline = Color.FromArgb(64, 128, 128, 128);
+            cuiButton12.Rounding = new Padding(8);
+            cuiButton12.Size = new Size(144, 23);
+            cuiButton12.TabIndex = 7;
+            cuiButton12.TextAlignment = StringAlignment.Center;
+            cuiButton12.TextPadding = 12;
+            cuiButton12.TextSpacing = 2;
+            cuiButton12.Click += cuiButton12_Click;
+            // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Ubuntu", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            label4.Location = new Point(13, 3);
+            label4.Font = new Font("Ubuntu", 7.79999971F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            label4.Location = new Point(13, 0);
             label4.Name = "label4";
-            label4.Size = new Size(64, 21);
+            label4.Size = new Size(144, 36);
             label4.TabIndex = 1;
             label4.Text = "Status";
             // 
@@ -362,7 +418,7 @@
             cuiButton4.HoverOutline = Color.FromArgb(32, 128, 128, 128);
             cuiButton4.Image = null;
             cuiButton4.ImageExpand = new Point(0, 0);
-            cuiButton4.Location = new Point(13, 81);
+            cuiButton4.Location = new Point(13, 100);
             cuiButton4.Name = "cuiButton4";
             cuiButton4.NormalBackground = Color.FromArgb(30, 30, 30);
             cuiButton4.NormalForeColor = Color.White;
@@ -400,7 +456,7 @@
             cuiButton3.HoverOutline = Color.FromArgb(32, 128, 128, 128);
             cuiButton3.Image = null;
             cuiButton3.ImageExpand = new Point(0, 0);
-            cuiButton3.Location = new Point(13, 39);
+            cuiButton3.Location = new Point(13, 59);
             cuiButton3.Name = "cuiButton3";
             cuiButton3.NormalBackground = Color.FromArgb(30, 30, 30);
             cuiButton3.NormalForeColor = Color.White;
@@ -429,30 +485,175 @@
             // 
             // cuiPanel4
             // 
+            cuiPanel4.Controls.Add(cuiPanel6);
+            cuiPanel4.Controls.Add(cuiButton11);
+            cuiPanel4.Controls.Add(cuiPanel15);
+            cuiPanel4.Controls.Add(comboBox3);
+            cuiPanel4.Controls.Add(comboBox1);
+            cuiPanel4.Controls.Add(cuiButton5);
             cuiPanel4.Controls.Add(cuiPanel9);
             cuiPanel4.Controls.Add(cuiButton9);
             cuiPanel4.Controls.Add(cuiPanel8);
-            cuiPanel4.Controls.Add(cuiComboBox3);
             cuiPanel4.Controls.Add(cuiPanel7);
             cuiPanel4.Controls.Add(cuiButton8);
-            cuiPanel4.Controls.Add(cuiComboBox2);
-            cuiPanel4.Controls.Add(cuiComboBox1);
             cuiPanel4.Controls.Add(cuiPanel5);
-            cuiPanel4.Controls.Add(cuiPanel6);
             cuiPanel4.Location = new Point(187, 71);
             cuiPanel4.Name = "cuiPanel4";
             cuiPanel4.OutlineThickness = 1F;
             cuiPanel4.PanelColor = Color.FromArgb(109, 101, 101);
             cuiPanel4.PanelOutlineColor = Color.FromArgb(64, 128, 128, 128);
             cuiPanel4.Rounding = new Padding(8);
-            cuiPanel4.Size = new Size(598, 364);
+            cuiPanel4.Size = new Size(601, 367);
             cuiPanel4.TabIndex = 0;
+            // 
+            // cuiPanel6
+            // 
+            cuiPanel6.BackColor = Color.FromArgb(109, 101, 101);
+            cuiPanel6.Controls.Add(label3);
+            cuiPanel6.Location = new Point(387, 248);
+            cuiPanel6.Name = "cuiPanel6";
+            cuiPanel6.OutlineThickness = 1F;
+            cuiPanel6.PanelColor = Color.Silver;
+            cuiPanel6.PanelOutlineColor = Color.FromArgb(64, 128, 128, 128);
+            cuiPanel6.Rounding = new Padding(8);
+            cuiPanel6.Size = new Size(172, 62);
+            cuiPanel6.TabIndex = 10;
+            // 
+            // label3
+            // 
+            label3.BackColor = Color.Silver;
+            label3.Font = new Font("Microsoft New Tai Lue", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(3, 3);
+            label3.Name = "label3";
+            label3.Size = new Size(166, 54);
+            label3.TabIndex = 2;
+            label3.Text = "Can't you find your removable drive when you select Ventoy?";
+            // 
+            // cuiButton11
+            // 
+            cuiButton11.BackColor = Color.FromArgb(109, 101, 101);
+            cuiButton11.CheckButton = false;
+            cuiButton11.Checked = false;
+            cuiButton11.CheckedBackground = Color.FromArgb(255, 106, 0);
+            cuiButton11.CheckedForeColor = Color.White;
+            cuiButton11.CheckedImageTint = Color.White;
+            cuiButton11.CheckedOutline = Color.FromArgb(255, 106, 0);
+            cuiButton11.Content = "Install Ventoy";
+            cuiButton11.DialogResult = DialogResult.None;
+            cuiButton11.Font = new Font("Microsoft YaHei UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            cuiButton11.ForeColor = Color.White;
+            cuiButton11.HoverBackground = SystemColors.ControlDark;
+            cuiButton11.HoverForeColor = Color.DimGray;
+            cuiButton11.HoverImageTint = Color.DimGray;
+            cuiButton11.HoverOutline = Color.FromArgb(32, 128, 128, 128);
+            cuiButton11.Image = null;
+            cuiButton11.ImageExpand = new Point(0, 0);
+            cuiButton11.Location = new Point(387, 311);
+            cuiButton11.Name = "cuiButton11";
+            cuiButton11.NormalBackground = Color.FromArgb(30, 30, 30);
+            cuiButton11.NormalForeColor = Color.White;
+            cuiButton11.NormalImageTint = Color.Black;
+            cuiButton11.NormalOutline = Color.FromArgb(64, 128, 128, 128);
+            cuiButton11.OutlineThickness = 1F;
+            cuiButton11.Padding = new Padding(12);
+            cuiButton11.PressedBackground = Color.WhiteSmoke;
+            cuiButton11.PressedForeColor = Color.FromArgb(32, 32, 32);
+            cuiButton11.PressedImageTint = Color.FromArgb(32, 32, 32);
+            cuiButton11.PressedOutline = Color.FromArgb(64, 128, 128, 128);
+            cuiButton11.Rounding = new Padding(8);
+            cuiButton11.Size = new Size(172, 36);
+            cuiButton11.TabIndex = 14;
+            cuiButton11.TextAlignment = StringAlignment.Center;
+            cuiButton11.TextPadding = 12;
+            cuiButton11.TextSpacing = 2;
+            cuiButton11.Click += cuiButton11_Click;
+            // 
+            // cuiPanel15
+            // 
+            cuiPanel15.BackColor = Color.FromArgb(109, 101, 101);
+            cuiPanel15.Controls.Add(label12);
+            cuiPanel15.Location = new Point(159, 271);
+            cuiPanel15.Name = "cuiPanel15";
+            cuiPanel15.OutlineThickness = 1F;
+            cuiPanel15.PanelColor = Color.Silver;
+            cuiPanel15.PanelOutlineColor = Color.FromArgb(64, 128, 128, 128);
+            cuiPanel15.Rounding = new Padding(8);
+            cuiPanel15.Size = new Size(222, 39);
+            cuiPanel15.TabIndex = 9;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.BackColor = Color.Silver;
+            label12.Font = new Font("Ubuntu Medium", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            label12.Location = new Point(3, 11);
+            label12.Name = "label12";
+            label12.Size = new Size(66, 23);
+            label12.TabIndex = 2;
+            label12.Text = "Status";
+            // 
+            // comboBox3
+            // 
+            comboBox3.FormattingEnabled = true;
+            comboBox3.Location = new Point(198, 59);
+            comboBox3.Name = "comboBox3";
+            comboBox3.Size = new Size(144, 28);
+            comboBox3.TabIndex = 13;
+            comboBox3.SelectedIndexChanged += comboBox3_SelectedIndexChanged;
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(198, 16);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(144, 28);
+            comboBox1.TabIndex = 11;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            // 
+            // cuiButton5
+            // 
+            cuiButton5.BackColor = Color.FromArgb(109, 101, 101);
+            cuiButton5.CheckButton = false;
+            cuiButton5.Checked = false;
+            cuiButton5.CheckedBackground = Color.FromArgb(255, 106, 0);
+            cuiButton5.CheckedForeColor = Color.White;
+            cuiButton5.CheckedImageTint = Color.White;
+            cuiButton5.CheckedOutline = Color.FromArgb(255, 106, 0);
+            cuiButton5.Content = "Refresh";
+            cuiButton5.DialogResult = DialogResult.None;
+            cuiButton5.Font = new Font("Microsoft YaHei UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            cuiButton5.ForeColor = Color.White;
+            cuiButton5.HoverBackground = SystemColors.ControlDark;
+            cuiButton5.HoverForeColor = Color.DimGray;
+            cuiButton5.HoverImageTint = Color.DimGray;
+            cuiButton5.HoverOutline = Color.FromArgb(32, 128, 128, 128);
+            cuiButton5.Image = null;
+            cuiButton5.ImageExpand = new Point(0, 0);
+            cuiButton5.Location = new Point(354, 14);
+            cuiButton5.Name = "cuiButton5";
+            cuiButton5.NormalBackground = Color.FromArgb(30, 30, 30);
+            cuiButton5.NormalForeColor = Color.White;
+            cuiButton5.NormalImageTint = Color.Black;
+            cuiButton5.NormalOutline = Color.FromArgb(64, 128, 128, 128);
+            cuiButton5.OutlineThickness = 1F;
+            cuiButton5.Padding = new Padding(12);
+            cuiButton5.PressedBackground = Color.WhiteSmoke;
+            cuiButton5.PressedForeColor = Color.FromArgb(32, 32, 32);
+            cuiButton5.PressedImageTint = Color.FromArgb(32, 32, 32);
+            cuiButton5.PressedOutline = Color.FromArgb(64, 128, 128, 128);
+            cuiButton5.Rounding = new Padding(8);
+            cuiButton5.Size = new Size(96, 36);
+            cuiButton5.TabIndex = 10;
+            cuiButton5.TextAlignment = StringAlignment.Center;
+            cuiButton5.TextPadding = 12;
+            cuiButton5.TextSpacing = 2;
+            cuiButton5.Click += cuiButton5_Click;
             // 
             // cuiPanel9
             // 
-            cuiPanel9.BackColor = Color.Gray;
+            cuiPanel9.BackColor = Color.FromArgb(109, 101, 101);
             cuiPanel9.Controls.Add(label8);
-            cuiPanel9.Location = new Point(195, 146);
+            cuiPanel9.Location = new Point(195, 105);
             cuiPanel9.Name = "cuiPanel9";
             cuiPanel9.OutlineThickness = 1F;
             cuiPanel9.PanelColor = Color.Silver;
@@ -468,12 +669,13 @@
             label8.Font = new Font("Ubuntu Medium", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 162);
             label8.Location = new Point(30, 8);
             label8.Name = "label8";
-            label8.Size = new Size(93, 23);
+            label8.Size = new Size(91, 23);
             label8.TabIndex = 2;
-            label8.Text = "FileName";
+            label8.Text = "Unknown";
             // 
             // cuiButton9
             // 
+            cuiButton9.BackColor = Color.FromArgb(109, 101, 101);
             cuiButton9.CheckButton = false;
             cuiButton9.Checked = false;
             cuiButton9.CheckedBackground = Color.FromArgb(255, 106, 0);
@@ -490,7 +692,7 @@
             cuiButton9.HoverOutline = Color.FromArgb(32, 128, 128, 128);
             cuiButton9.Image = null;
             cuiButton9.ImageExpand = new Point(0, 0);
-            cuiButton9.Location = new Point(351, 149);
+            cuiButton9.Location = new Point(354, 108);
             cuiButton9.Name = "cuiButton9";
             cuiButton9.NormalBackground = Color.FromArgb(30, 30, 30);
             cuiButton9.NormalForeColor = Color.White;
@@ -508,12 +710,13 @@
             cuiButton9.TextAlignment = StringAlignment.Center;
             cuiButton9.TextPadding = 12;
             cuiButton9.TextSpacing = 2;
+            cuiButton9.Click += cuiButton9_Click;
             // 
             // cuiPanel8
             // 
-            cuiPanel8.BackColor = Color.Gray;
+            cuiPanel8.BackColor = Color.FromArgb(109, 101, 101);
             cuiPanel8.Controls.Add(label6);
-            cuiPanel8.Location = new Point(8, 146);
+            cuiPanel8.Location = new Point(8, 105);
             cuiPanel8.Name = "cuiPanel8";
             cuiPanel8.OutlineThickness = 1F;
             cuiPanel8.PanelColor = Color.Silver;
@@ -533,40 +736,11 @@
             label6.TabIndex = 2;
             label6.Text = "ISO File";
             // 
-            // cuiComboBox3
-            // 
-            cuiComboBox3.BackColor = Color.FromArgb(109, 101, 101);
-            cuiComboBox3.BackgroundColor = SystemColors.ButtonFace;
-            cuiComboBox3.DropDownBackgroundColor = Color.White;
-            cuiComboBox3.DropDownForeColor = Color.FromArgb(27, 27, 27);
-            cuiComboBox3.ExpandArrowColor = Color.Gray;
-            cuiComboBox3.ForeColor = Color.Gray;
-            cuiComboBox3.Items = new string[]
-    {
-    "Item 1",
-    "Item 2",
-    "Item 3"
-    };
-            cuiComboBox3.Location = new Point(198, 106);
-            cuiComboBox3.Margin = new Padding(4, 5, 4, 5);
-            cuiComboBox3.MaxDropDownHeight = 240;
-            cuiComboBox3.Name = "cuiComboBox3";
-            cuiComboBox3.NoSelectionText = "None";
-            cuiComboBox3.OutlineColor = Color.FromArgb(64, 128, 128, 128);
-            cuiComboBox3.OutlineThickness = 1F;
-            cuiComboBox3.Rounding = 8;
-            cuiComboBox3.SelectedIndex = -1;
-            cuiComboBox3.SelectedItem = "";
-            cuiComboBox3.Size = new Size(149, 26);
-            cuiComboBox3.SortAlphabetically = true;
-            cuiComboBox3.TabIndex = 8;
-            cuiComboBox3.SelectedIndexChanged += cuiComboBox3_SelectedIndexChanged;
-            // 
             // cuiPanel7
             // 
-            cuiPanel7.BackColor = Color.Gray;
+            cuiPanel7.BackColor = Color.FromArgb(109, 101, 101);
             cuiPanel7.Controls.Add(label5);
-            cuiPanel7.Location = new Point(8, 101);
+            cuiPanel7.Location = new Point(8, 56);
             cuiPanel7.Name = "cuiPanel7";
             cuiPanel7.OutlineThickness = 1F;
             cuiPanel7.PanelColor = Color.Silver;
@@ -588,6 +762,7 @@
             // 
             // cuiButton8
             // 
+            cuiButton8.BackColor = Color.FromArgb(109, 101, 101);
             cuiButton8.CheckButton = false;
             cuiButton8.Checked = false;
             cuiButton8.CheckedBackground = Color.FromArgb(255, 106, 0);
@@ -604,7 +779,7 @@
             cuiButton8.HoverOutline = Color.FromArgb(32, 128, 128, 128);
             cuiButton8.Image = null;
             cuiButton8.ImageExpand = new Point(0, 0);
-            cuiButton8.Location = new Point(203, 314);
+            cuiButton8.Location = new Point(159, 311);
             cuiButton8.Name = "cuiButton8";
             cuiButton8.NormalBackground = Color.FromArgb(30, 30, 30);
             cuiButton8.NormalForeColor = Color.White;
@@ -617,71 +792,16 @@
             cuiButton8.PressedImageTint = Color.FromArgb(32, 32, 32);
             cuiButton8.PressedOutline = Color.FromArgb(64, 128, 128, 128);
             cuiButton8.Rounding = new Padding(8);
-            cuiButton8.Size = new Size(144, 36);
+            cuiButton8.Size = new Size(222, 36);
             cuiButton8.TabIndex = 7;
             cuiButton8.TextAlignment = StringAlignment.Center;
             cuiButton8.TextPadding = 12;
             cuiButton8.TextSpacing = 2;
-            // 
-            // cuiComboBox2
-            // 
-            cuiComboBox2.BackColor = Color.FromArgb(109, 101, 101);
-            cuiComboBox2.BackgroundColor = SystemColors.ButtonFace;
-            cuiComboBox2.DropDownBackgroundColor = Color.White;
-            cuiComboBox2.DropDownForeColor = Color.FromArgb(27, 27, 27);
-            cuiComboBox2.ExpandArrowColor = Color.Gray;
-            cuiComboBox2.ForeColor = Color.Gray;
-            cuiComboBox2.Items = new string[]
-    {
-    "Item 1",
-    "Item 2",
-    "Item 3"
-    };
-            cuiComboBox2.Location = new Point(198, 63);
-            cuiComboBox2.Margin = new Padding(4, 5, 4, 5);
-            cuiComboBox2.MaxDropDownHeight = 240;
-            cuiComboBox2.Name = "cuiComboBox2";
-            cuiComboBox2.NoSelectionText = "None";
-            cuiComboBox2.OutlineColor = Color.FromArgb(64, 128, 128, 128);
-            cuiComboBox2.OutlineThickness = 1F;
-            cuiComboBox2.Rounding = 8;
-            cuiComboBox2.SelectedIndex = -1;
-            cuiComboBox2.SelectedItem = "";
-            cuiComboBox2.Size = new Size(149, 26);
-            cuiComboBox2.SortAlphabetically = true;
-            cuiComboBox2.TabIndex = 3;
-            // 
-            // cuiComboBox1
-            // 
-            cuiComboBox1.BackColor = Color.FromArgb(109, 101, 101);
-            cuiComboBox1.BackgroundColor = SystemColors.ButtonFace;
-            cuiComboBox1.DropDownBackgroundColor = Color.White;
-            cuiComboBox1.DropDownForeColor = Color.FromArgb(27, 27, 27);
-            cuiComboBox1.ExpandArrowColor = Color.Gray;
-            cuiComboBox1.ForeColor = Color.Gray;
-            cuiComboBox1.Items = new string[]
-    {
-    "Item 1",
-    "Item 2",
-    "Item 3"
-    };
-            cuiComboBox1.Location = new Point(198, 22);
-            cuiComboBox1.Margin = new Padding(4, 5, 4, 5);
-            cuiComboBox1.MaxDropDownHeight = 240;
-            cuiComboBox1.Name = "cuiComboBox1";
-            cuiComboBox1.NoSelectionText = "None";
-            cuiComboBox1.OutlineColor = Color.FromArgb(64, 128, 128, 128);
-            cuiComboBox1.OutlineThickness = 1F;
-            cuiComboBox1.Rounding = 8;
-            cuiComboBox1.SelectedIndex = -1;
-            cuiComboBox1.SelectedItem = "";
-            cuiComboBox1.Size = new Size(149, 26);
-            cuiComboBox1.SortAlphabetically = true;
-            cuiComboBox1.TabIndex = 0;
+            cuiButton8.Click += cuiButton8_Click;
             // 
             // cuiPanel5
             // 
-            cuiPanel5.BackColor = Color.Gray;
+            cuiPanel5.BackColor = Color.FromArgb(109, 101, 101);
             cuiPanel5.Controls.Add(label2);
             cuiPanel5.Location = new Point(8, 11);
             cuiPanel5.Name = "cuiPanel5";
@@ -696,47 +816,19 @@
             // 
             label2.BackColor = Color.Silver;
             label2.Font = new Font("Ubuntu Medium", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            label2.Location = new Point(19, 10);
+            label2.Location = new Point(3, 10);
             label2.Name = "label2";
             label2.Size = new Size(120, 25);
             label2.TabIndex = 1;
             label2.Text = "Flash Drive";
             // 
-            // cuiPanel6
-            // 
-            cuiPanel6.BackColor = Color.Gray;
-            cuiPanel6.Controls.Add(label3);
-            cuiPanel6.Location = new Point(8, 56);
-            cuiPanel6.Name = "cuiPanel6";
-            cuiPanel6.OutlineThickness = 1F;
-            cuiPanel6.PanelColor = Color.Silver;
-            cuiPanel6.PanelOutlineColor = Color.FromArgb(64, 128, 128, 128);
-            cuiPanel6.Rounding = new Padding(8);
-            cuiPanel6.Size = new Size(147, 39);
-            cuiPanel6.TabIndex = 5;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.Silver;
-            label3.Font = new Font("Ubuntu Medium", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            label3.Location = new Point(3, 10);
-            label3.Name = "label3";
-            label3.Size = new Size(138, 23);
-            label3.TabIndex = 2;
-            label3.Text = "Partition Type";
-            // 
             // cuiPanel10
             // 
-            cuiPanel10.Controls.Add(cuiPanel23);
-            cuiPanel10.Controls.Add(cuiPanel22);
             cuiPanel10.Controls.Add(cuiPanel21);
             cuiPanel10.Controls.Add(cuiPanel20);
             cuiPanel10.Controls.Add(cuiPanel19);
             cuiPanel10.Controls.Add(cuiPanel18);
             cuiPanel10.Controls.Add(cuiPanel17);
-            cuiPanel10.Controls.Add(cuiComboBox4);
-            cuiPanel10.Controls.Add(cuiPanel16);
             cuiPanel10.Controls.Add(cuiPanel14);
             cuiPanel10.Controls.Add(cuiPanel13);
             cuiPanel10.Controls.Add(cuiButton10);
@@ -751,57 +843,9 @@
             cuiPanel10.Size = new Size(601, 367);
             cuiPanel10.TabIndex = 10;
             // 
-            // cuiPanel23
-            // 
-            cuiPanel23.BackColor = Color.Gray;
-            cuiPanel23.Controls.Add(label20);
-            cuiPanel23.Location = new Point(184, 307);
-            cuiPanel23.Name = "cuiPanel23";
-            cuiPanel23.OutlineThickness = 1F;
-            cuiPanel23.PanelColor = Color.Silver;
-            cuiPanel23.PanelOutlineColor = Color.FromArgb(64, 128, 128, 128);
-            cuiPanel23.Rounding = new Padding(8);
-            cuiPanel23.Size = new Size(134, 43);
-            cuiPanel23.TabIndex = 18;
-            // 
-            // label20
-            // 
-            label20.AutoSize = true;
-            label20.BackColor = Color.Silver;
-            label20.Font = new Font("Ubuntu Medium", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            label20.Location = new Point(11, 9);
-            label20.Name = "label20";
-            label20.Size = new Size(182, 23);
-            label20.TabIndex = 2;
-            label20.Text = "Usable/Unavaliable";
-            // 
-            // cuiPanel22
-            // 
-            cuiPanel22.BackColor = Color.Gray;
-            cuiPanel22.Controls.Add(label19);
-            cuiPanel22.Location = new Point(11, 307);
-            cuiPanel22.Name = "cuiPanel22";
-            cuiPanel22.OutlineThickness = 1F;
-            cuiPanel22.PanelColor = Color.Silver;
-            cuiPanel22.PanelOutlineColor = Color.FromArgb(64, 128, 128, 128);
-            cuiPanel22.Rounding = new Padding(8);
-            cuiPanel22.Size = new Size(170, 43);
-            cuiPanel22.TabIndex = 17;
-            // 
-            // label19
-            // 
-            label19.AutoSize = true;
-            label19.BackColor = Color.Silver;
-            label19.Font = new Font("Ubuntu Medium", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            label19.Location = new Point(28, 9);
-            label19.Name = "label19";
-            label19.Size = new Size(98, 23);
-            label19.TabIndex = 2;
-            label19.Text = "DISKPART";
-            // 
             // cuiPanel21
             // 
-            cuiPanel21.BackColor = Color.Gray;
+            cuiPanel21.BackColor = Color.FromArgb(109, 101, 101);
             cuiPanel21.Controls.Add(label18);
             cuiPanel21.Location = new Point(184, 262);
             cuiPanel21.Name = "cuiPanel21";
@@ -809,7 +853,7 @@
             cuiPanel21.PanelColor = Color.Silver;
             cuiPanel21.PanelOutlineColor = Color.FromArgb(64, 128, 128, 128);
             cuiPanel21.Rounding = new Padding(8);
-            cuiPanel21.Size = new Size(134, 43);
+            cuiPanel21.Size = new Size(158, 43);
             cuiPanel21.TabIndex = 17;
             // 
             // label18
@@ -825,7 +869,7 @@
             // 
             // cuiPanel20
             // 
-            cuiPanel20.BackColor = Color.Gray;
+            cuiPanel20.BackColor = Color.FromArgb(109, 101, 101);
             cuiPanel20.Controls.Add(label17);
             cuiPanel20.Location = new Point(184, 213);
             cuiPanel20.Name = "cuiPanel20";
@@ -833,7 +877,7 @@
             cuiPanel20.PanelColor = Color.Silver;
             cuiPanel20.PanelOutlineColor = Color.FromArgb(64, 128, 128, 128);
             cuiPanel20.Rounding = new Padding(8);
-            cuiPanel20.Size = new Size(134, 43);
+            cuiPanel20.Size = new Size(158, 43);
             cuiPanel20.TabIndex = 16;
             // 
             // label17
@@ -849,7 +893,7 @@
             // 
             // cuiPanel19
             // 
-            cuiPanel19.BackColor = Color.Gray;
+            cuiPanel19.BackColor = Color.FromArgb(109, 101, 101);
             cuiPanel19.Controls.Add(label16);
             cuiPanel19.Location = new Point(11, 262);
             cuiPanel19.Name = "cuiPanel19";
@@ -873,7 +917,7 @@
             // 
             // cuiPanel18
             // 
-            cuiPanel18.BackColor = Color.Gray;
+            cuiPanel18.BackColor = Color.FromArgb(109, 101, 101);
             cuiPanel18.Controls.Add(label15);
             cuiPanel18.Location = new Point(11, 213);
             cuiPanel18.Name = "cuiPanel18";
@@ -897,7 +941,7 @@
             // 
             // cuiPanel17
             // 
-            cuiPanel17.BackColor = Color.Gray;
+            cuiPanel17.BackColor = Color.FromArgb(109, 101, 101);
             cuiPanel17.Controls.Add(label14);
             cuiPanel17.Location = new Point(11, 164);
             cuiPanel17.Name = "cuiPanel17";
@@ -905,7 +949,7 @@
             cuiPanel17.PanelColor = Color.Silver;
             cuiPanel17.PanelOutlineColor = Color.FromArgb(64, 128, 128, 128);
             cuiPanel17.Rounding = new Padding(8);
-            cuiPanel17.Size = new Size(307, 43);
+            cuiPanel17.Size = new Size(331, 43);
             cuiPanel17.TabIndex = 14;
             // 
             // label14
@@ -914,68 +958,16 @@
             label14.AutoSize = true;
             label14.BackColor = Color.Silver;
             label14.Font = new Font("Ubuntu Medium", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            label14.Location = new Point(113, 9);
+            label14.Location = new Point(137, 9);
             label14.Name = "label14";
             label14.Size = new Size(80, 23);
             label14.TabIndex = 2;
             label14.Text = "Engines";
             label14.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // cuiComboBox4
-            // 
-            cuiComboBox4.BackColor = Color.FromArgb(109, 101, 101);
-            cuiComboBox4.BackgroundColor = SystemColors.ButtonFace;
-            cuiComboBox4.DropDownBackgroundColor = Color.White;
-            cuiComboBox4.DropDownForeColor = Color.FromArgb(27, 27, 27);
-            cuiComboBox4.ExpandArrowColor = Color.Gray;
-            cuiComboBox4.ForeColor = Color.Gray;
-            cuiComboBox4.Items = new string[]
-    {
-    "Item 1",
-    "Item 2",
-    "Item 3"
-    };
-            cuiComboBox4.Location = new Point(159, 16);
-            cuiComboBox4.Margin = new Padding(4, 5, 4, 5);
-            cuiComboBox4.MaxDropDownHeight = 240;
-            cuiComboBox4.Name = "cuiComboBox4";
-            cuiComboBox4.NoSelectionText = "None";
-            cuiComboBox4.OutlineColor = Color.FromArgb(64, 128, 128, 128);
-            cuiComboBox4.OutlineThickness = 1F;
-            cuiComboBox4.Rounding = 8;
-            cuiComboBox4.SelectedIndex = -1;
-            cuiComboBox4.SelectedItem = "";
-            cuiComboBox4.Size = new Size(105, 34);
-            cuiComboBox4.SortAlphabetically = true;
-            cuiComboBox4.TabIndex = 16;
-            // 
-            // cuiPanel16
-            // 
-            cuiPanel16.BackColor = Color.Gray;
-            cuiPanel16.Controls.Add(label13);
-            cuiPanel16.Location = new Point(11, 11);
-            cuiPanel16.Name = "cuiPanel16";
-            cuiPanel16.OutlineThickness = 1F;
-            cuiPanel16.PanelColor = Color.Silver;
-            cuiPanel16.PanelOutlineColor = Color.FromArgb(64, 128, 128, 128);
-            cuiPanel16.Rounding = new Padding(8);
-            cuiPanel16.Size = new Size(141, 39);
-            cuiPanel16.TabIndex = 14;
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.BackColor = Color.Silver;
-            label13.Font = new Font("Ubuntu Medium", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            label13.Location = new Point(19, 10);
-            label13.Name = "label13";
-            label13.Size = new Size(95, 23);
-            label13.TabIndex = 2;
-            label13.Text = "Language";
-            // 
             // cuiPanel14
             // 
-            cuiPanel14.BackColor = Color.Gray;
+            cuiPanel14.BackColor = Color.FromArgb(109, 101, 101);
             cuiPanel14.Controls.Add(label11);
             cuiPanel14.Location = new Point(504, 56);
             cuiPanel14.Name = "cuiPanel14";
@@ -999,7 +991,7 @@
             // 
             // cuiPanel13
             // 
-            cuiPanel13.BackColor = Color.Gray;
+            cuiPanel13.BackColor = Color.FromArgb(109, 101, 101);
             cuiPanel13.Controls.Add(label10);
             cuiPanel13.Location = new Point(271, 56);
             cuiPanel13.Name = "cuiPanel13";
@@ -1023,6 +1015,7 @@
             // 
             // cuiButton10
             // 
+            cuiButton10.BackColor = Color.FromArgb(109, 101, 101);
             cuiButton10.CheckButton = false;
             cuiButton10.Checked = false;
             cuiButton10.CheckedBackground = Color.FromArgb(255, 106, 0);
@@ -1061,7 +1054,7 @@
             // 
             // cuiPanel11
             // 
-            cuiPanel11.BackColor = Color.Gray;
+            cuiPanel11.BackColor = Color.FromArgb(109, 101, 101);
             cuiPanel11.Controls.Add(label7);
             cuiPanel11.Location = new Point(505, 11);
             cuiPanel11.Name = "cuiPanel11";
@@ -1085,7 +1078,7 @@
             // 
             // cuiPanel12
             // 
-            cuiPanel12.BackColor = Color.Gray;
+            cuiPanel12.BackColor = Color.FromArgb(109, 101, 101);
             cuiPanel12.Controls.Add(label9);
             cuiPanel12.Location = new Point(271, 11);
             cuiPanel12.Name = "cuiPanel12";
@@ -1110,8 +1103,6 @@
             // cuiPanel24
             // 
             cuiPanel24.Controls.Add(cuiButton14);
-            cuiPanel24.Controls.Add(cuiButton13);
-            cuiPanel24.Controls.Add(cuiButton12);
             cuiPanel24.Controls.Add(pictureBox1);
             cuiPanel24.Controls.Add(cuiPanel25);
             cuiPanel24.Controls.Add(cuiPanel26);
@@ -1160,86 +1151,13 @@
             cuiButton14.TextAlignment = StringAlignment.Center;
             cuiButton14.TextPadding = 12;
             cuiButton14.TextSpacing = 2;
-            // 
-            // cuiButton13
-            // 
-            cuiButton13.CheckButton = false;
-            cuiButton13.Checked = false;
-            cuiButton13.CheckedBackground = Color.FromArgb(255, 106, 0);
-            cuiButton13.CheckedForeColor = Color.White;
-            cuiButton13.CheckedImageTint = Color.White;
-            cuiButton13.CheckedOutline = Color.FromArgb(255, 106, 0);
-            cuiButton13.Content = "Patreon";
-            cuiButton13.DialogResult = DialogResult.None;
-            cuiButton13.Font = new Font("Microsoft YaHei UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            cuiButton13.ForeColor = Color.White;
-            cuiButton13.HoverBackground = SystemColors.ControlDark;
-            cuiButton13.HoverForeColor = Color.DimGray;
-            cuiButton13.HoverImageTint = Color.DimGray;
-            cuiButton13.HoverOutline = Color.FromArgb(32, 128, 128, 128);
-            cuiButton13.Image = null;
-            cuiButton13.ImageExpand = new Point(0, 0);
-            cuiButton13.Location = new Point(348, 291);
-            cuiButton13.Name = "cuiButton13";
-            cuiButton13.NormalBackground = Color.FromArgb(30, 30, 30);
-            cuiButton13.NormalForeColor = Color.White;
-            cuiButton13.NormalImageTint = Color.Black;
-            cuiButton13.NormalOutline = Color.FromArgb(64, 128, 128, 128);
-            cuiButton13.OutlineThickness = 1F;
-            cuiButton13.Padding = new Padding(12);
-            cuiButton13.PressedBackground = Color.WhiteSmoke;
-            cuiButton13.PressedForeColor = Color.FromArgb(32, 32, 32);
-            cuiButton13.PressedImageTint = Color.FromArgb(32, 32, 32);
-            cuiButton13.PressedOutline = Color.FromArgb(64, 128, 128, 128);
-            cuiButton13.Rounding = new Padding(8);
-            cuiButton13.Size = new Size(238, 36);
-            cuiButton13.TabIndex = 21;
-            cuiButton13.TextAlignment = StringAlignment.Center;
-            cuiButton13.TextPadding = 12;
-            cuiButton13.TextSpacing = 2;
-            // 
-            // cuiButton12
-            // 
-            cuiButton12.CheckButton = false;
-            cuiButton12.Checked = false;
-            cuiButton12.CheckedBackground = Color.FromArgb(255, 106, 0);
-            cuiButton12.CheckedForeColor = Color.White;
-            cuiButton12.CheckedImageTint = Color.White;
-            cuiButton12.CheckedOutline = Color.FromArgb(255, 106, 0);
-            cuiButton12.Content = "Buy Me a Coffee!";
-            cuiButton12.DialogResult = DialogResult.None;
-            cuiButton12.Font = new Font("Microsoft YaHei UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            cuiButton12.ForeColor = Color.White;
-            cuiButton12.HoverBackground = SystemColors.ControlDark;
-            cuiButton12.HoverForeColor = Color.DimGray;
-            cuiButton12.HoverImageTint = Color.DimGray;
-            cuiButton12.HoverOutline = Color.FromArgb(32, 128, 128, 128);
-            cuiButton12.Image = null;
-            cuiButton12.ImageExpand = new Point(0, 0);
-            cuiButton12.Location = new Point(348, 251);
-            cuiButton12.Name = "cuiButton12";
-            cuiButton12.NormalBackground = Color.FromArgb(30, 30, 30);
-            cuiButton12.NormalForeColor = Color.White;
-            cuiButton12.NormalImageTint = Color.Black;
-            cuiButton12.NormalOutline = Color.FromArgb(64, 128, 128, 128);
-            cuiButton12.OutlineThickness = 1F;
-            cuiButton12.Padding = new Padding(12);
-            cuiButton12.PressedBackground = Color.WhiteSmoke;
-            cuiButton12.PressedForeColor = Color.FromArgb(32, 32, 32);
-            cuiButton12.PressedImageTint = Color.FromArgb(32, 32, 32);
-            cuiButton12.PressedOutline = Color.FromArgb(64, 128, 128, 128);
-            cuiButton12.Rounding = new Padding(8);
-            cuiButton12.Size = new Size(238, 36);
-            cuiButton12.TabIndex = 7;
-            cuiButton12.TextAlignment = StringAlignment.Center;
-            cuiButton12.TextPadding = 12;
-            cuiButton12.TextSpacing = 2;
+            cuiButton14.Click += cuiButton14_Click;
             // 
             // pictureBox1
             // 
             pictureBox1.Location = new Point(348, 11);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(238, 185);
+            pictureBox1.Size = new Size(238, 192);
             pictureBox1.TabIndex = 20;
             pictureBox1.TabStop = false;
             // 
@@ -1265,7 +1183,7 @@
             label21.Name = "label21";
             label21.Size = new Size(163, 23);
             label21.TabIndex = 2;
-            label21.Text = "Version: Beta 0.1";
+            label21.Text = "Version: Beta 0.2";
             // 
             // cuiPanel26
             // 
@@ -1291,6 +1209,311 @@
             label22.TabIndex = 2;
             label22.Text = "HyperBoot ";
             // 
+            // openFileDialog1
+            // 
+            openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // cuiPanel16
+            // 
+            cuiPanel16.Controls.Add(cuiButton13);
+            cuiPanel16.Controls.Add(label24);
+            cuiPanel16.Controls.Add(label23);
+            cuiPanel16.Controls.Add(cuiPanel27);
+            cuiPanel16.Controls.Add(cuiPanel23);
+            cuiPanel16.Controls.Add(label20);
+            cuiPanel16.Controls.Add(cuiPanel22);
+            cuiPanel16.Controls.Add(label19);
+            cuiPanel16.Controls.Add(label13);
+            cuiPanel16.Controls.Add(cuiPanel29);
+            cuiPanel16.Controls.Add(cuiPanel30);
+            cuiPanel16.Location = new Point(187, 71);
+            cuiPanel16.Name = "cuiPanel16";
+            cuiPanel16.OutlineThickness = 1F;
+            cuiPanel16.PanelColor = Color.FromArgb(109, 101, 101);
+            cuiPanel16.PanelOutlineColor = Color.FromArgb(64, 128, 128, 128);
+            cuiPanel16.Rounding = new Padding(8);
+            cuiPanel16.Size = new Size(601, 367);
+            cuiPanel16.TabIndex = 15;
+            // 
+            // cuiButton13
+            // 
+            cuiButton13.CheckButton = false;
+            cuiButton13.Checked = false;
+            cuiButton13.CheckedBackground = Color.FromArgb(255, 106, 0);
+            cuiButton13.CheckedForeColor = Color.White;
+            cuiButton13.CheckedImageTint = Color.White;
+            cuiButton13.CheckedOutline = Color.FromArgb(255, 106, 0);
+            cuiButton13.Content = "Send";
+            cuiButton13.DialogResult = DialogResult.None;
+            cuiButton13.Font = new Font("Microsoft YaHei UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            cuiButton13.ForeColor = Color.White;
+            cuiButton13.HoverBackground = SystemColors.ControlDark;
+            cuiButton13.HoverForeColor = Color.DimGray;
+            cuiButton13.HoverImageTint = Color.DimGray;
+            cuiButton13.HoverOutline = Color.FromArgb(32, 128, 128, 128);
+            cuiButton13.Image = null;
+            cuiButton13.ImageExpand = new Point(0, 0);
+            cuiButton13.Location = new Point(216, 311);
+            cuiButton13.Name = "cuiButton13";
+            cuiButton13.NormalBackground = Color.FromArgb(30, 30, 30);
+            cuiButton13.NormalForeColor = Color.White;
+            cuiButton13.NormalImageTint = Color.Black;
+            cuiButton13.NormalOutline = Color.FromArgb(64, 128, 128, 128);
+            cuiButton13.OutlineThickness = 1F;
+            cuiButton13.Padding = new Padding(12);
+            cuiButton13.PressedBackground = Color.WhiteSmoke;
+            cuiButton13.PressedForeColor = Color.FromArgb(32, 32, 32);
+            cuiButton13.PressedImageTint = Color.FromArgb(32, 32, 32);
+            cuiButton13.PressedOutline = Color.FromArgb(64, 128, 128, 128);
+            cuiButton13.Rounding = new Padding(8);
+            cuiButton13.Size = new Size(144, 36);
+            cuiButton13.TabIndex = 8;
+            cuiButton13.TextAlignment = StringAlignment.Center;
+            cuiButton13.TextPadding = 12;
+            cuiButton13.TextSpacing = 2;
+            cuiButton13.Click += cuiButton13_Click;
+            // 
+            // label24
+            // 
+            label24.AutoSize = true;
+            label24.BackColor = Color.FromArgb(109, 101, 101);
+            label24.Font = new Font("Ubuntu", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            label24.Location = new Point(129, 90);
+            label24.Name = "label24";
+            label24.Size = new Size(353, 40);
+            label24.TabIndex = 12;
+            label24.Text = "What do you expect from the OS or Computer ? \r\nPlease Explain";
+            // 
+            // label23
+            // 
+            label23.BackColor = Color.FromArgb(109, 101, 101);
+            label23.Font = new Font("Ubuntu", 7.79999971F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            label23.Location = new Point(271, 8);
+            label23.Name = "label23";
+            label23.Size = new Size(129, 41);
+            label23.TabIndex = 11;
+            label23.Text = "Your Disk Type SSD, HDD...";
+            // 
+            // cuiPanel27
+            // 
+            cuiPanel27.BackColor = Color.FromArgb(109, 101, 101);
+            cuiPanel27.Controls.Add(richTextBox1);
+            cuiPanel27.Location = new Point(14, 139);
+            cuiPanel27.Name = "cuiPanel27";
+            cuiPanel27.OutlineThickness = 1F;
+            cuiPanel27.PanelColor = Color.Silver;
+            cuiPanel27.PanelOutlineColor = Color.FromArgb(64, 128, 128, 128);
+            cuiPanel27.Rounding = new Padding(8);
+            cuiPanel27.Size = new Size(580, 160);
+            cuiPanel27.TabIndex = 8;
+            // 
+            // richTextBox1
+            // 
+            richTextBox1.Location = new Point(3, 3);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.Size = new Size(574, 154);
+            richTextBox1.TabIndex = 0;
+            richTextBox1.Text = "";
+            // 
+            // cuiPanel23
+            // 
+            cuiPanel23.BackColor = Color.FromArgb(109, 101, 101);
+            cuiPanel23.Controls.Add(cuiTextBox3);
+            cuiPanel23.Location = new Point(406, 5);
+            cuiPanel23.Name = "cuiPanel23";
+            cuiPanel23.OutlineThickness = 1F;
+            cuiPanel23.PanelColor = Color.Silver;
+            cuiPanel23.PanelOutlineColor = Color.FromArgb(64, 128, 128, 128);
+            cuiPanel23.Rounding = new Padding(8);
+            cuiPanel23.Size = new Size(147, 39);
+            cuiPanel23.TabIndex = 8;
+            // 
+            // cuiTextBox3
+            // 
+            cuiTextBox3.BackgroundColor = Color.White;
+            cuiTextBox3.Content = "";
+            cuiTextBox3.FocusBackgroundColor = Color.White;
+            cuiTextBox3.FocusImageTint = Color.White;
+            cuiTextBox3.FocusOutlineColor = Color.FromArgb(255, 106, 0);
+            cuiTextBox3.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cuiTextBox3.ForeColor = Color.Gray;
+            cuiTextBox3.Image = null;
+            cuiTextBox3.ImageExpand = new Point(0, 0);
+            cuiTextBox3.ImageOffset = new Point(0, 0);
+            cuiTextBox3.Location = new Point(4, 6);
+            cuiTextBox3.Margin = new Padding(4);
+            cuiTextBox3.Multiline = false;
+            cuiTextBox3.Name = "cuiTextBox3";
+            cuiTextBox3.NormalImageTint = Color.White;
+            cuiTextBox3.OutlineColor = Color.FromArgb(128, 128, 128, 128);
+            cuiTextBox3.Padding = new Padding(20, 3, 20, 0);
+            cuiTextBox3.PasswordChar = false;
+            cuiTextBox3.PlaceholderColor = Color.LightGray;
+            cuiTextBox3.PlaceholderText = "";
+            cuiTextBox3.Rounding = new Padding(8);
+            cuiTextBox3.Size = new Size(139, 27);
+            cuiTextBox3.TabIndex = 15;
+            cuiTextBox3.TextOffset = new Size(0, 0);
+            cuiTextBox3.UnderlinedStyle = true;
+            // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.BackColor = Color.FromArgb(109, 101, 101);
+            label20.Font = new Font("Ubuntu", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            label20.Location = new Point(274, 53);
+            label20.Name = "label20";
+            label20.Size = new Size(86, 20);
+            label20.TabIndex = 10;
+            label20.Text = "Gpu Model";
+            // 
+            // cuiPanel22
+            // 
+            cuiPanel22.BackColor = Color.FromArgb(109, 101, 101);
+            cuiPanel22.Controls.Add(cuiTextBox4);
+            cuiPanel22.Location = new Point(406, 47);
+            cuiPanel22.Name = "cuiPanel22";
+            cuiPanel22.OutlineThickness = 1F;
+            cuiPanel22.PanelColor = Color.Silver;
+            cuiPanel22.PanelOutlineColor = Color.FromArgb(64, 128, 128, 128);
+            cuiPanel22.Rounding = new Padding(8);
+            cuiPanel22.Size = new Size(147, 39);
+            cuiPanel22.TabIndex = 7;
+            cuiPanel22.Paint += cuiPanel22_Paint;
+            // 
+            // cuiTextBox4
+            // 
+            cuiTextBox4.BackgroundColor = Color.White;
+            cuiTextBox4.Content = "";
+            cuiTextBox4.FocusBackgroundColor = Color.White;
+            cuiTextBox4.FocusImageTint = Color.White;
+            cuiTextBox4.FocusOutlineColor = Color.FromArgb(255, 106, 0);
+            cuiTextBox4.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            cuiTextBox4.ForeColor = Color.Gray;
+            cuiTextBox4.Image = null;
+            cuiTextBox4.ImageExpand = new Point(0, 0);
+            cuiTextBox4.ImageOffset = new Point(0, 0);
+            cuiTextBox4.Location = new Point(4, 5);
+            cuiTextBox4.Margin = new Padding(4);
+            cuiTextBox4.Multiline = false;
+            cuiTextBox4.Name = "cuiTextBox4";
+            cuiTextBox4.NormalImageTint = Color.White;
+            cuiTextBox4.OutlineColor = Color.FromArgb(128, 128, 128, 128);
+            cuiTextBox4.Padding = new Padding(17, 5, 17, 0);
+            cuiTextBox4.PasswordChar = false;
+            cuiTextBox4.PlaceholderColor = Color.Black;
+            cuiTextBox4.PlaceholderText = "Enter A Gpu Model";
+            cuiTextBox4.Rounding = new Padding(8);
+            cuiTextBox4.Size = new Size(139, 27);
+            cuiTextBox4.TabIndex = 16;
+            cuiTextBox4.TextOffset = new Size(0, 0);
+            cuiTextBox4.UnderlinedStyle = true;
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.BackColor = Color.FromArgb(109, 101, 101);
+            label19.Font = new Font("Ubuntu", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            label19.Location = new Point(7, 59);
+            label19.Name = "label19";
+            label19.Size = new Size(85, 20);
+            label19.TabIndex = 9;
+            label19.Text = "Cpu Model";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.BackColor = Color.FromArgb(109, 101, 101);
+            label13.Font = new Font("Ubuntu", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            label13.Location = new Point(32, 16);
+            label13.Name = "label13";
+            label13.Size = new Size(43, 20);
+            label13.TabIndex = 8;
+            label13.Text = "RAM";
+            // 
+            // cuiPanel29
+            // 
+            cuiPanel29.BackColor = Color.FromArgb(109, 101, 101);
+            cuiPanel29.Controls.Add(cuiTextBox1);
+            cuiPanel29.Location = new Point(101, 50);
+            cuiPanel29.Name = "cuiPanel29";
+            cuiPanel29.OutlineThickness = 1F;
+            cuiPanel29.PanelColor = Color.Silver;
+            cuiPanel29.PanelOutlineColor = Color.FromArgb(64, 128, 128, 128);
+            cuiPanel29.Rounding = new Padding(8);
+            cuiPanel29.Size = new Size(163, 39);
+            cuiPanel29.TabIndex = 6;
+            // 
+            // cuiTextBox1
+            // 
+            cuiTextBox1.BackgroundColor = Color.White;
+            cuiTextBox1.Content = "";
+            cuiTextBox1.FocusBackgroundColor = Color.White;
+            cuiTextBox1.FocusImageTint = Color.White;
+            cuiTextBox1.FocusOutlineColor = Color.FromArgb(255, 106, 0);
+            cuiTextBox1.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            cuiTextBox1.ForeColor = Color.Gray;
+            cuiTextBox1.Image = null;
+            cuiTextBox1.ImageExpand = new Point(0, 0);
+            cuiTextBox1.ImageOffset = new Point(0, 0);
+            cuiTextBox1.Location = new Point(4, 6);
+            cuiTextBox1.Margin = new Padding(4);
+            cuiTextBox1.Multiline = false;
+            cuiTextBox1.Name = "cuiTextBox1";
+            cuiTextBox1.NormalImageTint = Color.White;
+            cuiTextBox1.OutlineColor = Color.FromArgb(128, 128, 128, 128);
+            cuiTextBox1.Padding = new Padding(17, 5, 17, 0);
+            cuiTextBox1.PasswordChar = false;
+            cuiTextBox1.PlaceholderColor = Color.Black;
+            cuiTextBox1.PlaceholderText = "Enter A Cpu Model";
+            cuiTextBox1.Rounding = new Padding(8);
+            cuiTextBox1.Size = new Size(155, 27);
+            cuiTextBox1.TabIndex = 13;
+            cuiTextBox1.TextOffset = new Size(0, 0);
+            cuiTextBox1.UnderlinedStyle = true;
+            // 
+            // cuiPanel30
+            // 
+            cuiPanel30.BackColor = Color.FromArgb(109, 101, 101);
+            cuiPanel30.Controls.Add(cuiTextBox2);
+            cuiPanel30.Location = new Point(101, 5);
+            cuiPanel30.Name = "cuiPanel30";
+            cuiPanel30.OutlineThickness = 1F;
+            cuiPanel30.PanelColor = Color.Silver;
+            cuiPanel30.PanelOutlineColor = Color.FromArgb(64, 128, 128, 128);
+            cuiPanel30.Rounding = new Padding(8);
+            cuiPanel30.Size = new Size(163, 39);
+            cuiPanel30.TabIndex = 4;
+            // 
+            // cuiTextBox2
+            // 
+            cuiTextBox2.BackgroundColor = Color.White;
+            cuiTextBox2.Content = "";
+            cuiTextBox2.FocusBackgroundColor = Color.White;
+            cuiTextBox2.FocusImageTint = Color.White;
+            cuiTextBox2.FocusOutlineColor = Color.FromArgb(255, 106, 0);
+            cuiTextBox2.Font = new Font("Microsoft YaHei UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            cuiTextBox2.ForeColor = Color.Gray;
+            cuiTextBox2.Image = null;
+            cuiTextBox2.ImageExpand = new Point(0, 0);
+            cuiTextBox2.ImageOffset = new Point(0, 0);
+            cuiTextBox2.Location = new Point(4, 5);
+            cuiTextBox2.Margin = new Padding(4);
+            cuiTextBox2.Multiline = false;
+            cuiTextBox2.Name = "cuiTextBox2";
+            cuiTextBox2.NormalImageTint = Color.White;
+            cuiTextBox2.OutlineColor = Color.FromArgb(128, 128, 128, 128);
+            cuiTextBox2.Padding = new Padding(17, 5, 17, 0);
+            cuiTextBox2.PasswordChar = false;
+            cuiTextBox2.PlaceholderColor = Color.Black;
+            cuiTextBox2.PlaceholderText = " Enter valid ram size ";
+            cuiTextBox2.Rounding = new Padding(8);
+            cuiTextBox2.Size = new Size(155, 27);
+            cuiTextBox2.TabIndex = 14;
+            cuiTextBox2.Tag = " Enter a Valid Number If the value you enter is MB, please add itIf the value you enter is MB, please add it";
+            cuiTextBox2.TextOffset = new Size(0, 0);
+            cuiTextBox2.UnderlinedStyle = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -1300,22 +1523,25 @@
             Controls.Add(cuiPanel3);
             Controls.Add(cuiPanel2);
             Controls.Add(cuiPanel1);
-            Controls.Add(cuiPanel4);
-            Controls.Add(flowLayoutPanel1);
             Controls.Add(cuiPanel24);
             Controls.Add(cuiPanel10);
+            Controls.Add(cuiPanel16);
+            Controls.Add(cuiPanel4);
+            Controls.Add(flowLayoutPanel1);
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
             Text = "HyperBoot Beta";
-            TransparencyKey = Color.Transparent;
             FormClosing += Form1_FormClosing;
             Load += Form1_Load;
             cuiPanel1.ResumeLayout(false);
             cuiPanel1.PerformLayout();
             cuiPanel2.ResumeLayout(false);
             cuiPanel3.ResumeLayout(false);
-            cuiPanel3.PerformLayout();
             cuiPanel4.ResumeLayout(false);
+            cuiPanel6.ResumeLayout(false);
+            cuiPanel15.ResumeLayout(false);
+            cuiPanel15.PerformLayout();
             cuiPanel9.ResumeLayout(false);
             cuiPanel9.PerformLayout();
             cuiPanel8.ResumeLayout(false);
@@ -1323,13 +1549,7 @@
             cuiPanel7.ResumeLayout(false);
             cuiPanel7.PerformLayout();
             cuiPanel5.ResumeLayout(false);
-            cuiPanel6.ResumeLayout(false);
-            cuiPanel6.PerformLayout();
             cuiPanel10.ResumeLayout(false);
-            cuiPanel23.ResumeLayout(false);
-            cuiPanel23.PerformLayout();
-            cuiPanel22.ResumeLayout(false);
-            cuiPanel22.PerformLayout();
             cuiPanel21.ResumeLayout(false);
             cuiPanel21.PerformLayout();
             cuiPanel20.ResumeLayout(false);
@@ -1340,8 +1560,6 @@
             cuiPanel18.PerformLayout();
             cuiPanel17.ResumeLayout(false);
             cuiPanel17.PerformLayout();
-            cuiPanel16.ResumeLayout(false);
-            cuiPanel16.PerformLayout();
             cuiPanel14.ResumeLayout(false);
             cuiPanel14.PerformLayout();
             cuiPanel13.ResumeLayout(false);
@@ -1356,6 +1574,13 @@
             cuiPanel25.PerformLayout();
             cuiPanel26.ResumeLayout(false);
             cuiPanel26.PerformLayout();
+            cuiPanel16.ResumeLayout(false);
+            cuiPanel16.PerformLayout();
+            cuiPanel27.ResumeLayout(false);
+            cuiPanel23.ResumeLayout(false);
+            cuiPanel22.ResumeLayout(false);
+            cuiPanel29.ResumeLayout(false);
+            cuiPanel30.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -1374,16 +1599,11 @@
         private HartUI.Controls.cuiButton cuiButton4;
         private FlowLayoutPanel flowLayoutPanel1;
         private HartUI.Controls.cuiPanel cuiPanel4;
-        private Label label3;
         private Label label2;
-        private HartUI.Controls.cuiComboBox cuiComboBox1;
-        private HartUI.Controls.cuiComboBox cuiComboBox2;
         private HartUI.Controls.cuiPanel cuiPanel5;
-        private HartUI.Controls.cuiPanel cuiPanel6;
         private HartUI.Controls.cuiButton cuiButton9;
         private HartUI.Controls.cuiPanel cuiPanel8;
         private Label label6;
-        private HartUI.Controls.cuiComboBox cuiComboBox3;
         private HartUI.Controls.cuiPanel cuiPanel7;
         private Label label5;
         private HartUI.Controls.cuiButton cuiButton8;
@@ -1400,11 +1620,8 @@
         private HartUI.Controls.cuiButton cuiButton10;
         private HartUI.Controls.cuiPanel cuiPanel11;
         private Label label7;
-        private HartUI.Controls.cuiPanel cuiPanel16;
-        private Label label13;
         private HartUI.Controls.cuiPanel cuiPanel17;
         private Label label14;
-        private HartUI.Controls.cuiComboBox cuiComboBox4;
         private HartUI.Controls.cuiPanel cuiPanel19;
         private Label label16;
         private HartUI.Controls.cuiPanel cuiPanel18;
@@ -1415,16 +1632,37 @@
         private Label label21;
         private HartUI.Controls.cuiPanel cuiPanel26;
         private Label label22;
-        private HartUI.Controls.cuiPanel cuiPanel23;
-        private Label label20;
-        private HartUI.Controls.cuiPanel cuiPanel22;
-        private Label label19;
         private HartUI.Controls.cuiPanel cuiPanel21;
         private Label label18;
         private HartUI.Controls.cuiPanel cuiPanel20;
         private Label label17;
         private HartUI.Controls.cuiButton cuiButton14;
-        private HartUI.Controls.cuiButton cuiButton13;
+        private OpenFileDialog openFileDialog1;
+        private HartUI.Controls.cuiButton cuiButton5;
+        private ComboBox comboBox3;
+        private ComboBox comboBox1;
+        private HartUI.Controls.cuiPanel cuiPanel15;
+        private Label label12;
+        private HartUI.Controls.cuiButton cuiButton11;
+        private HartUI.Controls.cuiPanel cuiPanel6;
+        private Label label3;
+        private HartUI.Controls.cuiPanel cuiPanel16;
+        private HartUI.Controls.cuiPanel cuiPanel29;
+        private HartUI.Controls.cuiPanel cuiPanel30;
         private HartUI.Controls.cuiButton cuiButton12;
+        private Label label19;
+        private Label label13;
+        private Label label20;
+        private HartUI.Controls.cuiPanel cuiPanel22;
+        private HartUI.Controls.cuiPanel cuiPanel27;
+        private HartUI.Controls.cuiPanel cuiPanel23;
+        private Label label23;
+        private HartUI.Controls.cuiButton cuiButton13;
+        private Label label24;
+        private HartUI.Controls.cuiTextBox cuiTextBox3;
+        private HartUI.Controls.cuiTextBox cuiTextBox4;
+        private HartUI.Controls.cuiTextBox cuiTextBox1;
+        private HartUI.Controls.cuiTextBox cuiTextBox2;
+        private RichTextBox richTextBox1;
     }
 }

@@ -16,10 +16,13 @@ public class InfoCardClass
     private const int CardHeight = 82;
     private const int LabelMargin = 3;
 
-    // Renk paleti (istediğiniz gibi özelleştirin)
+    // Renk paleti
     private static readonly Color NormalColor = Color.Gainsboro;
     private static readonly Color HoverColor = Color.LightSteelBlue;
     private static readonly Color PressedColor = Color.SteelBlue;
+
+    // Segoe UI Fontu tek bir yerden merkezi yönetiliyor
+    private static readonly Font CardFont = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
 
     public List<cuiPanel> Cards { get; } = new List<cuiPanel>();
 
@@ -68,7 +71,8 @@ public class InfoCardClass
                     AutoEllipsis = true,
                     TextAlign = ContentAlignment.TopLeft,
                     BackColor = Color.Transparent,
-                    Cursor = Cursors.Hand
+                    Cursor = Cursors.Hand,
+                    Font = CardFont // Segoe UI fontu burada atanıyor
                 };
 
                 infoCard.Controls.Add(label);
@@ -79,7 +83,6 @@ public class InfoCardClass
                 MouseEventHandler onDown = (s, e) => infoCard.PanelColor = PressedColor;
                 MouseEventHandler onUp = (s, e) =>
                 {
-                    // Mouse hâlâ kart üzerindeyse hover rengine, değilse normale dön
                     bool stillInside = infoCard.ClientRectangle.Contains(infoCard.PointToClient(Cursor.Position));
                     infoCard.PanelColor = stillInside ? HoverColor : NormalColor;
                 };
@@ -88,15 +91,14 @@ public class InfoCardClass
                     CardClicked?.Invoke(this, new CardClickedEventArgs(index, infoCard, texts[index]));
                 };
 
-                // Panel'in kendisine ekle
+                // Panel olayları
                 infoCard.MouseEnter += onEnter;
                 infoCard.MouseLeave += onLeave;
                 infoCard.MouseDown += onDown;
                 infoCard.MouseUp += onUp;
                 infoCard.Click += onClick;
 
-                // Label panelin üstünde olduğu için mouse olayları label'a düşer,
-                // bu yüzden aynı davranışı label'a da bağlıyoruz.
+                // Label olayları
                 label.MouseEnter += onEnter;
                 label.MouseLeave += onLeave;
                 label.MouseDown += onDown;

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(İnstall));
             cuiPanel1 = new HartUI.Controls.cuiPanel();
             label1 = new Label();
             cuiButton2 = new HartUI.Controls.cuiButton();
@@ -61,7 +62,7 @@
             cuiPanel1.PanelColor = Color.FromArgb(109, 101, 101);
             cuiPanel1.PanelOutlineColor = Color.FromArgb(64, 128, 128, 128);
             cuiPanel1.Rounding = new Padding(16);
-            cuiPanel1.Size = new Size(645, 57);
+            cuiPanel1.Size = new Size(635, 57);
             cuiPanel1.TabIndex = 0;
             cuiPanel1.MouseDown += cuiPanel1_MouseDown;
             // 
@@ -131,7 +132,7 @@
             cuiButton1.HoverOutline = Color.FromArgb(32, 128, 128, 128);
             cuiButton1.Image = null;
             cuiButton1.ImageExpand = new Point(0, 0);
-            cuiButton1.Location = new Point(582, 3);
+            cuiButton1.Location = new Point(577, 3);
             cuiButton1.Name = "cuiButton1";
             cuiButton1.NormalBackground = Color.Maroon;
             cuiButton1.NormalForeColor = Color.Black;
@@ -345,7 +346,8 @@
             Controls.Add(cuiPanel16);
             Controls.Add(cuiPanel1);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "Install";
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Name = "İnstall";
             Text = "Install ISO File";
             FormClosing += Install_FormClosing;
             Load += İnstall_Load;

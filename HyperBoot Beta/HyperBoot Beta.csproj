@@ -5,13 +5,20 @@
     <TargetFramework>net10.0-windows</TargetFramework>
     <RootNamespace>HyperBoot_Beta</RootNamespace>
     <Nullable>enable</Nullable>
+	<ApplicationManifest>app.manifest</ApplicationManifest>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>Başlık-ekle.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Başlık-ekle.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="HartUI.Winforms" Version="2026.7.22" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.5-beta1" />
+    <PackageReference Include="System.Management" Version="11.0.0-preview.6.26359.118" />
   </ItemGroup>
 
   <ItemGroup>
