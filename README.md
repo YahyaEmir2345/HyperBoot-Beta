@@ -3,12 +3,10 @@ HyperBoot unifies the entire operating system installation workflow into a singl
 Instead of manually searching through web browsers for distribution mirrors and juggling separate USB flashing utilities, HyperBoot handles it all in one place. Discover official Linux distributions, download high-speed ISO images, and flash bootable USB drives directly—no extra software required.
 
 Key Features:
-
-Integrated ISO Catalog: Browse and fetch official system images from trusted mirrors.
-
-One-Click Flashing: Burn ISOs directly to your USB drives with maximum reliability.
-
-All-in-One Workflow: Eliminate browser downloads and third-party tools completely.
+  Integrated ISO Catalog: Browse and fetch official system images from trusted mirrors.
+  One-Click Flashing: Burn ISOs directly to your USB drives with maximum reliability.
+  All-in-One Workflow: Eliminate browser downloads and third-party tools completely.
+  AI Advisor: If you can't choice the distro? AI can help.
 
 The Write Menu:
 <img width="811" height="462" alt="Ekran görüntüsü 2026-08-09 111152" src="https://github.com/user-attachments/assets/76695f2a-79b5-4896-9ff7-1cb50bc6bc4f" />
